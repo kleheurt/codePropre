@@ -1,8 +1,8 @@
-package ex3;
+package ex3.old;
 
 import java.util.List;
 
-public class ZoneCarnivore {
+public class SavaneAfricaine {
 
 	private List<String> types;
 	private List<String> noms;
@@ -20,7 +20,11 @@ public class ZoneCarnivore {
 		}
 	}
 	
-	public double calculerKgsNourritureParJour(){
+	public int compterAnimaux(){
+		return noms.size();
+	}
+	
+	public int calculerKgsNourritureParJour(){
 		return noms.size() * 10;
 	}
 }

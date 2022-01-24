@@ -3,6 +3,8 @@ package ex3;
 import java.util.ArrayList;
 import java.util.List;
 
+import ex3.animal.Animal;
+
 public class Zone {
 	
 	private String nom;
