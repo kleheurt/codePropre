@@ -1,4 +1,4 @@
-package ex3.animal;
+package ex3.animal.type;
 
 public interface Mammifere {
 	
