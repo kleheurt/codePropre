@@ -9,9 +9,10 @@ public class Zone {
 	private List<Animal> animaux;
 	private double consommation;
 	
-	public Zone(String nom) {
+	public Zone(String nom, double consommation) {
 		super();
 		this.nom = nom;
+		this.consommation = consommation;
 		this.animaux = new ArrayList<>();
 	}
 	

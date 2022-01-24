@@ -7,7 +7,7 @@ public class Animal {
 	private String comportements;
 	
 	
-	public Animal(String type, String nom, String comportements) {
+	public Animal(String nom, String type, String comportements) {
 		super();
 		this.type = type;
 		this.nom = nom;

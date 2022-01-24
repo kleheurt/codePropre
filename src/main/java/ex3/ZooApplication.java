@@ -8,10 +8,10 @@ public class ZooApplication {
 	public static void main(String[] args) {
 		Zoo zoo = new Zoo("Thoiry");
 		
-		Zone aquarium = new Zone("Aquarium");
-		Zone fermeReptile = new Zone("Ferme Reptile");
-		Zone savane = new Zone("Savane Africaine");
-		Zone carnivore = new Zone("Carnivore");
+		Zone aquarium = new Zone("Aquarium", .2);
+		Zone fermeReptile = new Zone("Ferme Reptile", .1);
+		Zone savane = new Zone("Savane Africaine", 10);
+		Zone carnivore = new Zone("Carnivore",10);
 		
 		savane.addAnimal(new Animal("Gazelle", "MAMMIFERE", "HERBIVORE"));
 		savane.addAnimal(new Animal("Zèbre", "MAMIFERE", "HERBIVORE"));
@@ -24,6 +24,8 @@ public class ZooApplication {
 		
 		Zone[] zones = {aquarium, fermeReptile, savane, carnivore};
 		zoo.setZones(new ArrayList<Zone>(Arrays.asList(zones)));
+		
+		zoo.afficherListeAnimaux();
 	}
 
 }
