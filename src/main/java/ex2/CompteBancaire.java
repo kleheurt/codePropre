@@ -14,10 +14,6 @@ public class CompteBancaire {
 	/** decouvert : un découvert est autorisé seulement pour les comptes courants */
 	protected double decouvert;
 
-	/** tauxRemuneration : taux de rémunération dans le cas d'un livret A */
-	protected double tauxRemuneration;
-
-
 	/**
 	 * @param solde
 	 * @param decouvert
@@ -49,22 +45,6 @@ public class CompteBancaire {
 		}
 	}
 
-
-
-	/**
-	 * Ce constructeur est utilisé pour créer un compte de type Livret A
-	 * 
-	 * @param type             = LA
-	 * @param solde            représente le solde du compte
-	 * @param decouvert        représente le découvert autorisé
-	 * @param tauxRemuneration représente le taux de rémunération du livret A
-	 */
-	public CompteBancaire(String type, double solde, double decouvert, double tauxRemuneration) {
-		super();
-		this.solde = solde;
-		this.decouvert = decouvert;
-		this.tauxRemuneration = tauxRemuneration;
-	}
 
 	/**
 	 * Getter for solde
@@ -102,23 +82,6 @@ public class CompteBancaire {
 		this.decouvert = decouvert;
 	}
 
-	/**
-	 * Getter for tauxRemuneration
-	 * 
-	 * @return the tauxRemuneration
-	 */
-	public double getTauxRemuneration() {
-		return tauxRemuneration;
-	}
-
-	/**
-	 * Setter
-	 * 
-	 * @param tauxRemuneration the tauxRemuneration to set
-	 */
-	public void setTauxRemuneration(double tauxRemuneration) {
-		this.tauxRemuneration = tauxRemuneration;
-	}
 
 	/**
 	 * Getter for type

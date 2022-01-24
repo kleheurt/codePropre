@@ -1,10 +1,13 @@
 package ex2;
 
 public class LivretA extends CompteBancaire {
+	
+	private double tauxRemuneration;
 
-	public LivretA(String type, double solde, double tauxRemuneration) {
-		super(type, solde, 0, tauxRemuneration);
-		this.decouvert = 0;
+	public LivretA(double solde, double tauxRemuneration) {
+		super(solde,0);
+		this.tauxRemuneration = tauxRemuneration;
+		
 	}
 	
 	public void appliquerRemuAnnuelle() {
@@ -15,5 +18,24 @@ public class LivretA extends CompteBancaire {
 	public String getType() {
 		return "LA";
 	}
+	
+	/**
+	 * Getter for tauxRemuneration
+	 * 
+	 * @return the tauxRemuneration
+	 */
+	public double getTauxRemuneration() {
+		return tauxRemuneration;
+	}
+
+	/**
+	 * Setter
+	 * 
+	 * @param tauxRemuneration the tauxRemuneration to set
+	 */
+	public void setTauxRemuneration(double tauxRemuneration) {
+		this.tauxRemuneration = tauxRemuneration;
+	}
+
 
 }
